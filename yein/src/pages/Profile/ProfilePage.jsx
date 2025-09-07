@@ -83,7 +83,8 @@ const ProfilePage = () => {
             ✎
           </button>
         </div>
-        <div className={styles.userName}>{profile.name}</div>
+        {/* ✅ nickname 사용 */}
+        <div className={styles.userName}>{profile.nickname}</div>
 
         {/* ✅ 펫 레벨 / 경험치 */}
         <div className={styles.levelInfo}>
