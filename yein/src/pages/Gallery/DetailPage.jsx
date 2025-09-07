@@ -72,7 +72,7 @@ const DetailPage = () => {
             <div className={styles.progressWrapper}>
               <div
                 className={`${styles.progressFill} ${styles.progressAlignment}`}
-                style={{ width: `${gallery.alignmentScore}%` }}
+                style={{ width: `${(gallery.alignmentScore / 25) * 100}%` }}
               />
             </div>
             <span className={styles.score_info2}>{gallery.alignmentScore}</span>
@@ -84,7 +84,7 @@ const DetailPage = () => {
             <div className={styles.progressWrapper}>
               <div
                 className={`${styles.progressFill} ${styles.progressSpacing}`}
-                style={{ width: `${gallery.spacingScore}%` }}
+                style={{ width: `${(gallery.spacingScore / 25) * 100}%` }}
               />
             </div>
             <span className={styles.score_info2}>{gallery.spacingScore}</span>
@@ -96,7 +96,7 @@ const DetailPage = () => {
             <div className={styles.progressWrapper}>
               <div
                 className={`${styles.progressFill} ${styles.progressConsistency}`}
-                style={{ width: `${gallery.consistencyScore}%` }}
+                style={{ width: `${(gallery.consistencyScore / 25) * 100}%` }}
               />
             </div>
             <span className={styles.score_info2}>
@@ -110,7 +110,7 @@ const DetailPage = () => {
             <div className={styles.progressWrapper}>
               <div
                 className={`${styles.progressFill} ${styles.progressLength}`}
-                style={{ width: `${gallery.lengthScore}%` }}
+                style={{ width: `${(gallery.lengthScore / 25) * 100}%` }}
               />
             </div>
             <span className={styles.score_info2}>{gallery.lengthScore}</span>
